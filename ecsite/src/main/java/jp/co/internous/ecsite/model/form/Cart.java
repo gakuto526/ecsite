@@ -15,7 +15,7 @@ public class Cart implements Serializable {
 	}
 	
 	public void setId(long id) {
-		this.id=id;
+		this.id = id;
 	}
 	
 	public String getGoodsName() {
@@ -31,7 +31,7 @@ public class Cart implements Serializable {
 	}
 	
 	public void setPrice(long price) {
-		this.price=price;
+		this.price = price;
 	}
 	
 	public long getCount() {
@@ -39,6 +39,7 @@ public class Cart implements Serializable {
 	}
 	
 	public void setCount(long count) {
-		this.count=count;
+		this.count = count;
 	}
+	
 }

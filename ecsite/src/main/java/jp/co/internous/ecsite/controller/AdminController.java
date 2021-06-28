@@ -45,7 +45,6 @@ public class AdminController {
 				m.addAttribute("goods", goods);
 			}
 		}
-		
 		return "welcome";
 	}
 	
@@ -78,7 +77,6 @@ public class AdminController {
 		}catch(IllegalArgumentException e) {
 			return "-1";
 		}
-		
 		return "1";
 	}
 

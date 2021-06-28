@@ -14,7 +14,7 @@ public class CartForm implements Serializable {
 	}
 	
 	public void setUserId(long userId) {
-		this.userId=userId;
+		this.userId = userId;
 	}
 	
 	public List<Cart> getCartList(){
@@ -22,7 +22,7 @@ public class CartForm implements Serializable {
 	}
 	
 	public void setCartList(List<Cart> cartList) {
-		this.cartList=cartList;
+		this.cartList = cartList;
 	}
 
 }

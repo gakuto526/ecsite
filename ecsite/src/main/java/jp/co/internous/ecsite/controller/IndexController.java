@@ -26,9 +26,6 @@ import jp.co.internous.ecsite.model.form.HistoryForm;
 import jp.co.internous.ecsite.model.form.LoginForm;
 
 
-
-
-
 @Controller
 @RequestMapping("/ecsite")
 public class IndexController {
@@ -72,7 +69,6 @@ public class IndexController {
 			long total = c.getPrice() * c.getCount();
 			purchaseRepos.persist(f.getUserId(),c.getId(),c.getGoodsName(),c.getCount(),total);
 		});
-		
 		return String.valueOf(f.getCartList().size());
 	}
 	
@@ -86,7 +82,6 @@ public class IndexController {
 			HistoryDto dto = new HistoryDto(v);
 			historyDtoList.add(dto);
 		});
-		
 		return gson.toJson(historyDtoList);
 	}
 
